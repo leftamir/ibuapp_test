@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	</head>
+	<body>
+		<div id="header">
+		
+		</div>
+		<div id="nav">
+			<p onclick="myFunction(1)">1. Item</p>
+			<p onclick="myFunction(2)">2. Item</p>
+			<p onclick="myFunction(3)">3. Item</p>
+			<p onclick="myFunction(4)">4. Item</p>
+		</div>
+		<div id="body">
+			
+		</div>
+		<script>
+		function myFunction(number) {
+			if (number == 1) {
+			$("#body").html("<b>Page 1</b>");
+			} else if (number == 2) {
+			$("#body").html("<b>Page 2</b>");
+			} else if (number == 3) {
+			$("#body").html("<b>Page 3</b>");
+			} else {
+			$("#body").html("<b>Page 4</b>");
+			}
+		}
+		</script>
+	</body>
+</html>
