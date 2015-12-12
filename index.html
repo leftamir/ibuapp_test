@@ -16,7 +16,11 @@
 			<p onclick="myFunction(4)">4. Item</p>
 		</div>
 		<div id="body">
+		
 			
+		</div>
+		<a id="loginPanel">left-to-right</a>
+		<div id="userNav">
 		</div>
 		<script>
 		function myFunction(number) {
@@ -31,16 +35,16 @@
 			}
 		}
 		
-		document.addEventListener('deviceready', function () {
-			// cordova.plugins.notification.local is now available
-			cordova.plugins.notification.local.schedule({
-				id: 10,
-				title: "Meeting in 15 minutes!",
-				text: "Jour fixe Produktionsbesprechung",
-				at: today_at_1_10_am,
-				data: { meetingId:"#123FG8" }
-			});
-		}, false);
+		$('#loginPanel').click(function(){
+            
+                if ($('#userNav').is(':hidden')) {
+                   
+                   $('#userNav').show('slide',{direction:'left'},1000);
+                } else {
+                   
+                   $('#userNav').hide('slide',{direction:'left'},1000);
+                }
+		});
 		</script>
 	</body>
 </html>

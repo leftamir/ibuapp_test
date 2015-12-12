@@ -21,6 +21,5 @@
 	<platform name="android" />
 	<platform name="winphone" />
 	
-	<plugin name="de.appplant.cordova.plugin.local-notification" spec="0.8.1" source="pgb" />
 
 </widget>
